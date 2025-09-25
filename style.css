@@ -1,0 +1,273 @@
+/* Importación de Fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Variables de Color (Paleta Oscura) */
+:root {
+    --primary-color: #f5f5f5; /* Blanco grisáceo para textos y elementos */
+    --secondary-color: #3f4245; /* Gris oscuro para fondos */
+    --accent-color: #ff6b6b; /* Coral para acentos */
+    --text-color: #ffffff;
+    --light-bg: #222222; /* Fondo de sección más claro */
+    --dark-bg: #1a1a1a; /* Fondo principal oscuro */
+}
+
+/* Estilos Generales y Tipografía */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--dark-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+}
+
+.section-title::after {
+    background: var(--accent-color) !important;
+}
+
+/* Encabezado y Navegación */
+.navbar {
+    background-color: rgba(26, 26, 26, 0.95) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.fa-cart-shopping {
+    font-size: 1.25rem;
+    color: var(#f5f5f5);
+    transition: color 0.3s ease;
+}
+
+.fa-cart-shopping:hover {
+    color: var(--accent-color);
+}
+
+/* Carrusel Hero */
+.carousel-caption {
+    background: rgba(var(--dark-bg), 0.7);
+    color: var(--primary-color);
+    bottom: 20%;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.btn-coral {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-coral:hover {
+    background-color: #e56060;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--dark-bg);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1);
+    background-size: 3rem 3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color);
+}
+
+/* Sección de Productos Destacados */
+/* Sección de Productos Destacados */
+.product-card {
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--light-bg);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card .btn-add-cart {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .btn-add-cart:hover {
+    background-color: var(--accent-color);
+}
+
+/* Títulos de productos destacados */
+.product-card .card-title {
+    color: var(--primary-color); /* Cambia el color del título a blanco */
+}
+
+/* Precios de productos destacados */
+.product-card .card-text {
+    color: var(--primary-color) !important; /* Cambia el color del precio a blanco */
+}
+
+/* Sección de Marcas */
+.brands {
+    background-color: var(--dark-bg);
+}
+
+.brand-card {
+    background: var(--light-bg);
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--accent-color);
+}
+
+.brand-card h3 {
+    color: var(--primary-color);
+}
+
+.brand-card p {
+    color: var(--text-color);
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de Testimonios */
+.testimonials {
+    background-color: var(--light-bg);
+}
+
+.testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-color);
+}
+
+.testimonial-card .lead {
+    color: var(--text-color);
+}
+
+.testimonial-card img {
+    border: 3px solid var(--accent-color);
+}
+
+.testimonial-card .blockquote-footer {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Formulario de Contacto */
+.contact {
+    background-color: var(--dark-bg);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--light-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    color: var(--primary-color);
+}
+
+.form-control {
+    background-color: var(--dark-bg);
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.form-control:focus {
+    background-color: var(--dark-bg);
+    color: var(--primary-color);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-caption {
+        background: rgba(var(--dark-bg), 0.9);
+        bottom: 5%;
+        padding: 1.5rem;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-coral {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 15%;
+    }
+}
